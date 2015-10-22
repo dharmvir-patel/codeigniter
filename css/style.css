@@ -1,0 +1,80 @@
+/*
+@Template : Main style
+@Created by : Dharmvir Patel
+@Version : 1.0.0
+
+*/
+body{
+    margin: auto;
+    width: 1025px;
+	background: url("http://localhost/mvc/images/background.jpg") no-repeat fixed center top #aec1de;
+    color: #555555;
+}
+.nav-menu {
+     width:1025px;
+     height:52px;
+     padding:0px;
+     display:inline-block;
+     list-style:none;
+     border:1px solid black;
+     background:skyblue;
+     font-weight:bold;
+
+}
+
+     .nav-menu li {
+          
+          float:left;
+          position:relative;
+          display:inline-block;
+
+     }
+
+        .nav-menu li a {
+               padding:16px 20px;
+               border-right:1px solid slategrey;
+               text-decoration: none;
+			   color: Black;
+			   text-transform: uppercase;
+			   font-weight: bold;
+               
+        }
+          .nav-menu li a:hover {
+               background:#f9f9f9;
+			   color: red;
+			   
+          }
+          .nav-menu li a:active {
+               background:#ccc;
+          }
+
+          
+          .nav-menu .sub_nav {
+               width:200px;
+               padding:0px;
+               position:absolute;
+               top:35px;
+               left:0px;
+               border:1px solid #ccc;
+               background:skyblue;
+          }
+
+               .nav-menu .sub_nav li {
+                    width:200px;
+                    padding:0px;
+               }
+
+                    .nav-menu .sub_nav li a {
+                         display:block;
+                         border-bottom:1px solid #ccc;
+                    }
+                    .nav-menu .sub_nav li a:hover {
+                         background:#f9f9f9;
+                    }
+                    .nav-menu .sub_nav li a:active {
+                         background:#ccc;
+                    }
+.footer{
+ background-color:skyblue;
+ border:1px solid black;
+}
