@@ -16,16 +16,53 @@
 	</div>
 	<div class="col-sm-3">
 	<h3>Quick Links</h3>
-		<p>Site is created,designed and developed by Dharmvir Patel.</br>All rights are reserved.</br>Thanks for the visit.</p>
+       <div>
+		  <ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">News</a></li> 
+			<li><a href="#">Create News</a></li> 
+		  </ul>
+     </div>
 	</div>
 	<div class="col-sm-3">
-	    <h3>Contact Us</h3>
-		<form action="" method="post" enctype="multipart/form-data" role="form">
-		<div class="form-group"><input class="form-control" type="text" name="name" value="Name" /></div>
-		<div class="form-group"><input class="form-control" type="email" name="email" value="Email" /></div>
-		<div class="form-group"><textarea class="form-control" name="message">Message</textarea></div>
-		<div class="form-group"><input class="form-control" type="submit" id="querySubmit" value="Submit" /></div>
-		</form>
+	<h3>Contact Us</h3>
+        <?php 
+		 $attributes = array('class' => 'contact-form', 'id' => 'myform');
+         echo form_open('email/send', $attributes); 		 
+		 $name_input = array(
+              'name'        => 'username',
+              'id'          => 'username',
+              'value'       => 'Name',
+              'maxlength'   => '100',
+              'size'        => '50',
+              'class'       => 'form-control',
+            );
+
+          echo'<div class="form-group">'.form_input($name_input).'</div>';
+		  $email_input = array(
+              'name'        => 'email',
+              'id'          => 'email',
+              'value'       => 'Email',
+              'maxlength'   => '100',
+              'size'        => '50',
+              'class'       => 'form-control',
+            );
+
+          echo'<div class="form-group">'.form_input($email_input).'</div>';
+		   $message_input = array(
+			  'name'        => 'txt_area',
+			  'id'          => 'txt_area',
+			  'value'       => 'Message',
+			  'rows'        => '2',
+			  'cols'        => '10',
+			  'class'       => 'form-control',
+			);
+		
+		  echo '<div class="form-group">'.form_textarea($message_input).'</div>';
+		  echo '<div class="form-group">'.form_submit('mysubmit', 'Submit', "class='form-control'").'</div>';
+          echo form_close();
+        ?>
 	</div>
 </div>
 </div>
