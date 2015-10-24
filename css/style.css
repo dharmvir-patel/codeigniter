@@ -10,7 +10,7 @@ body{
 .footer {
  background : #001429;
  color : #FFF;
- padding : 15px;
+ padding : 15px 0 15px 0;
 }
 .footer-bottom {
 background : #C7D1D1;

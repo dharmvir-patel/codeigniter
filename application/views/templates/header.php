@@ -1,13 +1,13 @@
 <html>
 <head>
-	<title><?php echo $title ?> - CodeIgniter Tutorial</title>
+	<title><?php echo $title ?> - CodeIgniter</title>
 	
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="http://localhost/mvc/bootstrap/css/bootstrap.min.css">	
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">	
+	<link rel="stylesheet" href="http://localhost/mvc/bootstrap/css/bootstrap-theme.min.css">	
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://localhost/mvc/bootstrap/js/bootstrap.min.js"></script>
 	
 	<script src="http://localhost/mvc/js/jquery-2.0.3.js"></script>
     <script src="http://localhost/mvc/js/common.js"></script>
@@ -16,7 +16,7 @@
 <body>
 <!--nav-menu-->
 <nav class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
+<div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
